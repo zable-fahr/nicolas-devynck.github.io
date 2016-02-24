@@ -1,1 +1,1 @@
-# nicolas-devynck.github.io
+http://nicolas-devynck.github.io/
