@@ -1,4 +1,3 @@
-<?php include 'conteur.php'; ?>
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
@@ -22,8 +21,8 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<script type="text/javascript" src="jQuery.js"></script>
 		<script type="text/javascript" src="jQueryRotate.js"></script>
-		<?php include 'conteur.php'; ?>
 		<link rel="icon" type="image/png" href="logo.png" />
+		<?php include 'conteur.php'; ?>
 
 	</head>
 	<body>
@@ -118,22 +117,22 @@
 					<a class="scrollTo ancre" href="#cadre">^Haut de page^</a>
 					<div class="contact">
 						<h2 id="contact">Contactez moi</h2>
-						<form method="post" action="mail.php">
+						<form method="post" action="mail.php" id="formulaire" onsubmit="return verifForm(this)">
 							<h3>Vos Coordonners :</h3>
 							<div class="input_contact">
 								<label for="nom">Nom & Prénom :</label><br />
-								<input type="text" name="nom" id="nom" /><br />
+								<input type="text" name="nom" id="nom" required onblur="verifPseudo(this)"/><br />
 								<label for="site">Site Web :</label><br />
 								<input type="url" name="site" id="site" placeholder="http://example.com/" /><br />
 								<label for="mail">Mail :</label><br />
-								<input type="email" name="mail" id="mail" placeholder="contact@example.com" /><br />
+								<input type="email" name="mail" id="mail" placeholder="contact@example.com" required onblur="verifMail(this)"/><br />
 							</div>
 							<h3>Details du message :</h3>
 							<div class="input_contact">
 								<label for="sujet">Sujet :</label><br />
-								<input type="text" name="sujet" id="sujet" size="46" /><br />
+								<input type="text" name="sujet" id="sujet" required onblur="verifSujet(this)"/><br />
 								<label for="msg">Message :</label><br />
-								<textarea name="msg" id="msg"></textarea>
+								<textarea name="msg" id="msg" required onblur="verifMsg(this)"></textarea>
 								<div class="bouton">
 									<input type="submit" value="Envoyer" />
 								</div>

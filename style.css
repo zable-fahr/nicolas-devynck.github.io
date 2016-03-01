@@ -86,10 +86,10 @@ header {
 	margin-top: 1%;
 }
 .aside {
-	width: 32.33%;
+	width: 25%;
 }
 .article {
-	width: 62.66%;
+	width: 74%;
 	border-left: solid 2px #888888;
 }
 /* CSS contenu de article  */
@@ -142,6 +142,7 @@ textarea {
 	z-index: -3;
 }
 #engr2 {
+	transform: rotate(25deg);
 	width: 150px;
 	height: 150px;
 	left: 40px;
