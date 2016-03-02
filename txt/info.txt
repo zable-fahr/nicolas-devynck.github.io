@@ -1,0 +1,19 @@
+<?php /*
+-----------------------------< README >-----------------------------
+<div class="date"></div>
+Date du poste
+
+<div class="poste"></div>
+Intituler du poste
+
+<span></span>
+Detail du poste
+
+<a href="#" target="_blank"></a>
+Lien Externe
+--------------------------------------------------------------------
+*/ ?>
+
+<?php echo "\t\t\t\t"; ?>	<p>
+<?php echo "\t\t\t\t"; ?>		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac consequat orci. Nam lectus ante, laoreet in ipsum sit amet, imperdiet porttitor lorem. Donec luctus interdum magna, vitae vehicula massa sagittis quis. Maecenas eu justo viverra, lacinia nisl in, dapibus ipsum. Quisque maximus urna nec dolor hendrerit, vel blandit nunc iaculis. Nullam ut neque ac ligula viverra egestas. Nullam in faucibus massa. Suspendisse eu elementum neque. Etiam ultrices erat a lobortis feugiat.
+<?php echo "\t\t\t\t"; ?>	</p>

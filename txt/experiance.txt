@@ -1,0 +1,40 @@
+<?php /*
+-----------------------------< README >-----------------------------
+<div class="date"></div>
+Date du poste
+
+<div class="poste"></div>
+Intituler du poste
+
+<span></span>
+Detail du poste
+
+<a href="#" target="_blank"></a>
+Lien Externe
+--------------------------------------------------------------------
+*/ ?>
+
+<?php echo "\t\t\t\t"; ?>	<div class="date">2016</div>
+<?php echo "\t\t\t\t"; ?>	<div class="poste">
+<?php echo "\t\t\t\t"; ?>		Participation au kidsCoding en partenaria avec  « <a href="http://kidscodingclub.org/" target="_blank">Kids Coding club</a> »
+<?php echo "\t\t\t\t"; ?>		<br />
+<?php echo "\t\t\t\t"; ?>		<span>
+<?php echo "\t\t\t\t"; ?>			Atelier decouverte du pour code informatique à des collégiens.
+<?php echo "\t\t\t\t"; ?>		</span>
+<?php echo "\t\t\t\t"; ?>	</div>
+<?php echo "\t\t\t\t"; ?>	<div class="date">2015</div>
+<?php echo "\t\t\t\t"; ?>	<div class="poste">
+<?php echo "\t\t\t\t"; ?>		Participation et second lauréat au hackathon organiser par « <a href="http://www.erdf.fr/" target="_blank">ERDF</a> »
+<?php echo "\t\t\t\t"; ?>		<br />
+<?php echo "\t\t\t\t"; ?>		<span>
+<?php echo "\t\t\t\t"; ?>			Equipe de 3 personne pour développer en 2 jour une aplication mobile selont des critaires imposer.
+<?php echo "\t\t\t\t"; ?>		</span>
+<?php echo "\t\t\t\t"; ?>	</div>
+<?php echo "\t\t\t\t"; ?>	<div class="date">2006 2015</div>
+<?php echo "\t\t\t\t"; ?>	<div class="poste">
+<?php echo "\t\t\t\t"; ?>		Plusieurs contrats dans la restauration sur Narbonne et dans la France.
+<?php echo "\t\t\t\t"; ?>		<br />
+<?php echo "\t\t\t\t"; ?>		<span>
+<?php echo "\t\t\t\t"; ?>			Plusieur Poste à responsabiliter et travail en equipe.<br />Gestion des stock, Creation de fiche technique, Délégation de taches
+<?php echo "\t\t\t\t"; ?>		</span>
+<?php echo "\t\t\t\t"; ?>	</div>
