@@ -28,10 +28,7 @@ h2 {
 h3 {
 	font-size: 18px;
 }
-img {
-	display: block;
-	margin: auto;
-}
+
 /* on planque le header */
 header {
 	padding: 1%;
@@ -101,6 +98,9 @@ header {
 	border-top: dashed 1px #ffc354;
 	border-bottom: dashed 1px #ffc354;
 }
+.poste:hover {
+	background-color: rgba(255, 195, 84, 0.2);
+}
 .poste span {
 	color: #333333;
 	font-size: 12px;
@@ -110,6 +110,21 @@ header {
 	text-align: center;
 	padding: 10px;
 	font-weight: bold;
+}
+/* rezo */
+.rezo img, .rezo span {
+  vertical-align: middle;
+  display: inline-block;
+}
+.rezo {
+	float: left;
+	width : 50%;
+}
+.rezLeft {
+	text-align: right;
+}
+.rezRight {
+	text-align: left;
 }
 /* CSS Contact */
 .input_contact {
