@@ -75,3 +75,17 @@ $(function(){
 		return false;
 	});
 });
+
+/*
+if (erreur) {
+	for (var prop in obj) {
+  		console.log("obj." + prop + " = " + obj[prop]);
+	}
+
+// Affiche dans la console :
+// "obj.a = 1"
+// "obj.b = 2"
+// "obj.c = 3"
+	
+}
+ */
