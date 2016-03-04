@@ -14,8 +14,7 @@ a {
 	color: #834231;
 }
 a:hover {
-	text-decoration: overline underline;
-	color: #888888;
+	color: #555555;
 }
 h1 {
 	font-size: 20px;
@@ -112,19 +111,12 @@ header {
 	font-weight: bold;
 }
 /* rezo */
+.rezo {
+	text-align: center;
+}
 .rezo img, .rezo span {
   vertical-align: middle;
   display: inline-block;
-}
-.rezo {
-	float: left;
-	width : 50%;
-}
-.rezLeft {
-	text-align: right;
-}
-.rezRight {
-	text-align: left;
 }
 /* CSS Contact */
 .input_contact {

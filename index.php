@@ -110,10 +110,12 @@
 					<!-- Footer -->
 					© Devynck nicolas 2015
 					<br />
-					Les portes de l'avenir sont ouvertes à ceux qui savent les pousser. <a href="https://fr.wikipedia.org/wiki/Coluche" target="_blank">(coluche)</a>
+					Les portes de l'avenir sont ouvertes à ceux qui savent les pousser. <a href="https://fr.wikipedia.org/wiki/Coluche" target="_blank">(coluche)</a><br />
 					<!-- rezo -->
-					<div class="rezo rezLeft"><a href="http://github.com/nicolas-devynck" target="_blank"><img src="css/github.png" height="35" width="35" alt="Github" /><span>Sur Github</span></a></div>
-					<div class="rezo rezRight"><a href="http://www.facebook.com/devynck.nicolas" target="_blank"><img src="css/fb.png" height="35" width="35" alt="Facebook" /><span>Sur Facebook</span></a></div>
+					<div class="rezo">
+						<a href="http://github.com/nicolas-devynck" target="_blank"><img src="css/github.png" height="35" width="35" alt="Github" /><span>Sur Github</span></a>
+						<a href="http://www.facebook.com/devynck.nicolas" target="_blank"><img src="css/fb.png" height="35" width="35" alt="Facebook" /><span>Sur Facebook</span></a>
+					</div>
 				</div>
 				<div class="clear"></div>
 			</footer>
