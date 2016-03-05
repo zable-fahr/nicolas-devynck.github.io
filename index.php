@@ -108,7 +108,7 @@
 			<footer>
 				<div class="footer">
 					<!-- Footer -->
-					© Devynck nicolas 2015
+					© Devynck nicolas 2015-2016
 					<br />
 					Les portes de l'avenir sont ouvertes à ceux qui savent les pousser. <a href="https://fr.wikipedia.org/wiki/Coluche" target="_blank">(coluche)</a><br />
 					<!-- rezo -->

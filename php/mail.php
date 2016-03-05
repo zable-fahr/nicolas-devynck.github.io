@@ -28,7 +28,7 @@
 		if (!preg_match('#^[\w.-]+@[\w.-]+\.[a-z]{2,6}$#i', $mail) && strlen($sujet) < 6 || strlen($sujet) > 25) { $erreur[3][2]=FALSE; return FALSE; }
 		else { $erreur[3][2]=TRUE; return TRUE; }
 	}
-	if (verifNom() && verifSujet() && verifMsg() && verifMail()) {
+	if (verifNom() && verifSujet() && verifMsg() && verifMail()) { 
 		// Destinataire
 		$to = 'contact@nicolas-devynck.fr';
 		// l'en-tête Content-type
@@ -60,5 +60,5 @@
 	}
 	else {
 		 echo json_encode($erreur);
-	}
+	} 
 ?>

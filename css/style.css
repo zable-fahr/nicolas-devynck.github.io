@@ -98,7 +98,7 @@ header {
 	border-bottom: dashed 1px #ffc354;
 }
 .poste:hover {
-	background-color: rgba(255, 195, 84, 0.2);
+	background-color: #FCF9F4;
 }
 .poste span {
 	color: #333333;
