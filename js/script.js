@@ -3,18 +3,18 @@ $(document).ready(function() {
 		$('.scrollTo').on('click', function() { // Au clic sur un élément
 		var page = $(this).attr('href'); // Page cible
 		var speed = 750; // Durée de l'animation (en ms)
-		$('html, body').animate( { scrollTop: $(page).offset().top -55 }, speed ); // Go
+		$('html, body').animate( { scrollTop: $(page).offset().top -55 }, speed ); // Go avec le declage de nav
 		return false;
 	});
 });
 //script engrenage
-var iScrollPos = 0; // variable qui contien la position du scroll
+var iScrollPos = 0; // variable qui contiendra la position du scroll
 $(window).scroll(function () {
-    var iCurScrollPos = $(this).scrollTop();
-	if (iCurScrollPos > iScrollPos) { // scroll down 
-		$("#engr1").rotate(-iCurScrollPos);
-		$("#engr2").rotate(iCurScrollPos*2+25);
-		$("#engr3").css({ top : iCurScrollPos-100 });
+    var iCurScrollPos = $(this).scrollTop(); // on passe la position du scroll
+	if (iCurScrollPos > iScrollPos) { // scroll down
+		$("#engr1").rotate(-iCurScrollPos); //.rotate = plugin rotate
+		$("#engr2").rotate(iCurScrollPos*2+25); // *2 car engr2 et 2 fois plus petit et +25 pour aligner les 2 engr 
+		$("#engr3").css({ top : iCurScrollPos-100 }); //-100 taile de engr3 pour le cacher de l'ecran quant le scoll et en haut
 		$("#engr3").rotate(iCurScrollPos);
 		$("#engr4").rotate(iCurScrollPos);
 		$("#engr5").rotate(-iCurScrollPos*2);
@@ -30,38 +30,34 @@ $(window).scroll(function () {
 });
 //foncttion ajax pour le formulaire
 $(function(){
-	$("#formulaire").submit(function(event){
-		$.ajax({
-			type : "POST",
-			url: $(this).attr("action"),
+	$("#formulaire").submit(function(event){ // quant le formulaire et envoyer
+		$.ajax({ // on passe par ajax
+			type : "POST", // GET vs POST ici POST car le script php et construit aussi pour qu'il fonctione si JS et desactiver
+			url: $(this).attr("action"), // recuperation de l'action du formulaire
 			data: $(this).serialize(),
-			success : function(retPHP) {
-				var tabJSon = JSON.parse(retPHP);
-				// si c'est valide on vide le formulaire et envois d'un mesage de validation
-				if (tabJSon[0][2] && tabJSon[1][2] && tabJSon[2][2] && tabJSon[3][2]) {
-					document.getElementById('sujet').value = '';
-					document.getElementById('sujet').style.backgroundColor = '#ffc354';
-					document.getElementById('msg').value = '';
-					document.getElementById('msg').style.backgroundColor = '#ffc354';
-					document.getElementById('nom').value = '';
-					document.getElementById('nom').style.backgroundColor = '#ffc354';
-					document.getElementById('mail').value = '';
-					document.getElementById('mail').style.backgroundColor = '#ffc354';
-					alert('Votre requête a bien été traitée!');
-				}
-				// si il y a des erreur on les identifis et on indique l'erreur
-				else {
-					alert('Information incorrecte !! Merci de corriger');
+			success : function(retPHP) { // traitement des retour php
+				var tabJSon = JSON.parse(retPHP); // JSON.parse car echo renvois un 'string'
+				// si le mail est bien partit on vide le formulaire
+				if (tabJSon[0][2] && tabJSon[1][2] && tabJSon[2][2] && tabJSon[3][2]) { // tabJSon[i][2] = le boolean renvoyer par php et si tout est TRUE alors tout c'est bien passer'
 					for (var i=0; i<tabJSon.length; i++) {
-						if (!tabJSon[i][2]) {
-							document.getElementById(tabJSon[i][0]).value = tabJSon[i][1];
-							document.getElementById(tabJSon[i][0]).style.backgroundColor = '#FF6347';
+						document.getElementById(tabJSon[i][0]).value = '';
+						document.getElementById(tabJSon[i][0]).style.backgroundColor = '#ffc354';
+					}					
+					alert('Votre requête a bien été traitée!'); // envois d'un mesage de validation
+				}
+				// si il y a des erreur
+				else {
+					for (var i=0; i<tabJSon.length; i++) {
+						if (!tabJSon[i][2]) { // on vas chercher tous les FALSE renvoyer par php
+							document.getElementById(tabJSon[i][0]).value = tabJSon[i][1]; // on renvois ce que la personne a taper
+							document.getElementById(tabJSon[i][0]).style.backgroundColor = '#FF6347'; // et on passe le champs en rouge
 						}
-						else {
-							document.getElementById(tabJSon[i][0]).value = tabJSon[i][1];
-							document.getElementById(tabJSon[i][0]).style.backgroundColor = '#98FB98';
+						else { //on recupe tout les TRUE
+							document.getElementById(tabJSon[i][0]).value = tabJSon[i][1]; // on renvois ce que la personne a taper
+							document.getElementById(tabJSon[i][0]).style.backgroundColor = '#98FB98'; // et on passe le champs en vert
 						}
 					}
+					alert('Information incorrecte !! Merci de corriger'); //on envois un message d'erreur
 				}
 				
 			},
