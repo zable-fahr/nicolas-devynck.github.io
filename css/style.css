@@ -40,7 +40,7 @@ header {
 	background-size: cover;
 	position: fixed;
 	top: 6px;
-	left: 15%;
+	left: 11%;
 	width: 30px;
 	height: 30px;
 }
@@ -98,7 +98,7 @@ header {
 	border-bottom: dashed 1px #ffc354;
 }
 .poste:hover {
-	background-color: #FCF9F4;
+	background-color: #FBF9F4;
 }
 .poste span {
 	color: #333333;
@@ -117,6 +117,9 @@ header {
 .rezo img, .rezo span {
   vertical-align: middle;
   display: inline-block;
+}
+.rezo a {
+	white-space: nowrap;
 }
 /* CSS Contact */
 .input_contact {
@@ -177,7 +180,7 @@ textarea {
 }
 /* Media Query */
 /* affichage pour tablette */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 950px) {
 	body {
 		padding: 0% 5% 0% 5%;
 	}

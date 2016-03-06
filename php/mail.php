@@ -1,34 +1,41 @@
 <?php
-	$sujet = $_POST['sujet'];
+	$sujet = addslashes($_POST['sujet']);
 	$mail = $_POST['mail'];
-	$msg = $_POST['msg'];
+	$msg = addslashes($_POST['msg']);
 	$nom = $_POST['nom'];
-	$site = $_POST['site'];
+	$site = addslashes($_POST['site']);
 	
+	function verifNom($fnom) { //Verification du champ nom
+		if (!preg_match('/[^a-z_\-0-9]/i', $fmail) || strlen($fnom) < 2 || strlen($fnom) > 25) { return FALSE; }
+		else { return TRUE; }
+	}
+	function verifSujet($fsujet) { //Verification du champ sujet
+		if (strlen($fsujet) < 2 || strlen($fsujet) > 50) { return FALSE; }
+		else { return TRUE; }
+	}
+	function verifMsg($fmsg) { //Verification du champ msg
+		if (strlen($fmsg) < 5 || strlen($fmsg) > 2000) { return FALSE; }
+		else { return TRUE; }
+	}
+	function verifMail($fmail) {
+		if (!preg_match('#^[\w.-]+@[\w.-]+\.[a-z]{2,6}$#i', $fmail) || strlen($fmail) < 7 || strlen($fmail) > 25) { return FALSE; }
+		else { return TRUE; }
+	}
+	
+	$boolMsg = verifMsg($msg);
+	$boolNom = verifNom($nom);
+	$boolSujet = verifSujet($sujet);
+	$boolMail = verifMail($mail);
+	
+	//tab erreur pour identifer le problemme
 	$erreur = array(
-  		array('nom', ''.$nom.'', ''),
-  		array('sujet', ''.$sujet.'', ''),
-  		array('msg', ''.$msg.'', ''),
-  		array('mail', ''.$mail.'', ''),
- 	);
+  		array('msg', $msg, $boolMsg),
+		array("nom", $nom, $boolNom),
+		array("sujet", $sujet, $boolSujet),
+		array("mail", $mail, $boolMail)
+	);
 	
-	function verifNom() { //Verification du champ nom
-		if (strlen($nom) < 2 || strlen($nom) > 25) { $erreur[0][2]=FALSE; return FALSE; }
-		else { $erreur[0][2]=TRUE; return TRUE; }
-	}
-	function verifSujet() { //Verification du champ sujet
-		if (strlen($sujet) < 2 || strlen($sujet) > 50) { $erreur[1][2]=FALSE; return FALSE; }
-		else { $erreur[1][2]=true; return TRUE; }
-	}
-	function verifMsg() { //Verification du champ msg
-		if (strlen($msg) < 5 || strlen($msg) > 2000) { $erreur[2][2]=FALSE; return FALSE; }
-		else { $erreur[2][2]=TRUE; return TRUE; }
-	}
-	function verifMail() {
-		if (!preg_match('#^[\w.-]+@[\w.-]+\.[a-z]{2,6}$#i', $mail) && strlen($sujet) < 6 || strlen($sujet) > 25) { $erreur[3][2]=FALSE; return FALSE; }
-		else { $erreur[3][2]=TRUE; return TRUE; }
-	}
-	if (verifNom() && verifSujet() && verifMsg() && verifMail()) { 
+	if ($boolMsg && $boolNom && $boolSujet && $boolMail) { 
 		// Destinataire
 		$to = 'contact@nicolas-devynck.fr';
 		// l'en-tête Content-type
@@ -53,12 +60,33 @@
 		
 		// Envoi
 		mail($to, $sujet, $message, $headers);
-		// si le formulaire$erreur et envois sans ajax alors il y a redirection sur la page precedente
+	 
+		// si le formulaire sans ajax msg de validation
 		if (!isset($_SERVER['HTTP_X_REQUESTED_WITH']) && !strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
-			header("Location: ".$_SERVER['HTTP_REFERER']);
+			echo "<span style='color:#3B7A32;'>Votre requête a bien été traitée!</span><br /> \n\r";
+			echo "<a href=".$_SERVER['HTTP_REFERER']." ><-- Retour</a>";
+		}
+		// si le formulaire avec ajax envois d'information a traiter 
+		else {
+			echo json_encode($erreur);
 		}
 	}
 	else {
-		 echo json_encode($erreur);
-	} 
+		// si le formulaire sans ajax msg d'erreur
+		if (!isset($_SERVER['HTTP_X_REQUESTED_WITH']) && !strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
+			echo "<h1>Erreur</h1> \n\r";
+			for ($i=0; $i<sizeof($erreur); $i++) {
+				for ($j=0; $j<sizeof($erreur[$i]); $j++) {
+					if (!$erreur[$i][$j]) {
+						echo "<span>le champs <b>".$erreur[$i][0]."</b> est incorrecte :</span><br />\n\n<span style='color:#B23A3A;'><b>".$erreur[$i][1]."</b></span><br /><br />\n\n";						
+					}
+				}
+			}
+			echo "<br /><a href=".$_SERVER['HTTP_REFERER']." ><-- Retour</a>";
+		}
+		// si le formulaire avec ajax envois d'information a traiter
+		else {
+			echo json_encode($erreur);
+		}
+	}
 ?>

@@ -36,7 +36,7 @@
 				<!-- Logo -->
 				<div id="logo"></div>
 				<!-- Menu -->
-				<span>[<a class="scrollTo" href="#experiance"> Expériences </a>]</span><span>[<a class="scrollTo" href="#formation"> Formations </a>]</span><span>[<a class="scrollTo" href="#info"> Qui-suis-je </a>]</span><span>[<a class="scrollTo" href="#loisir"> loisirs </a>]</span><span>[<a class="scrollTo" href="#contact"> Contact </a>]</span>
+				<span>[<a class="scrollTo" href="#experiance"> Expériences </a>]</span> <span>[<a class="scrollTo" href="#formation"> Formations </a>]</span> <span>[<a class="scrollTo" href="#info"> Qui-suis-je </a>]</span> <span>[<a class="scrollTo" href="#loisir"> loisirs </a>]</span> <span>[<a class="scrollTo" href="#contact"> Contact </a>]</span>
 				<!-- Engrenage JQuery Bis -->
 				<div id="engr4"></div>
 				<div id="engr5"></div>
@@ -70,12 +70,12 @@
 					<div class="contact">
 						<h2 id="contact">Contactez moi</h2>
 						<!-- Formulaire de contacte -->
-						<form method="post" action="php/mail.php" id="formulaire" onsubmit="return verifForm(this)">
+						<form method="post" action="php/mail.php" id="formulaire">
 							<h3>Vos Coordonners :</h3>
 							<div class="input_contact">
 								<label for="nom">Nom & Prénom :</label>
 								<br />
-								<input type="text" name="nom" id="nom" required onblur="verifPseudo(this)"/>
+								<input type="text" name="nom" id="nom" required />
 								<br />
 								<label for="site">Site Web :</label>
 								<br />
@@ -83,18 +83,18 @@
 								<br />
 								<label for="mail">Mail :</label>
 								<br />
-								<input type="email" name="mail" id="mail" placeholder="contact@example.com" required onblur="verifMail(this)"/>
+								<input type="email" name="mail" id="mail" placeholder="contact@example.com" required />
 								<br />
 							</div>
 							<h3>Details du message :</h3>
 							<div class="input_contact">
 								<label for="sujet">Sujet :</label>
 								<br />
-								<input type="text" name="sujet" id="sujet" required onblur="verifSujet(this)"/>
+								<input type="text" name="sujet" id="sujet" required />
 								<br />
 								<label for="msg">Message :</label>
 								<br />
-								<textarea name="msg" id="msg" required onblur="verifMsg(this)"></textarea>
+								<textarea name="msg" id="msg" required></textarea>
 								<div class="bouton">
 									<input type="submit" value="Envoyer" />
 								</div>
