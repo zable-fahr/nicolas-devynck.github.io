@@ -77,10 +77,6 @@
 								<br />
 								<input type="text" name="nom" id="nom" />
 								<br />
-								<label for="site">Site Web :</label>
-								<br />
-								<input type="url" name="site" id="site" placeholder="http://example.com/" />
-								<br />
 								<label for="mail">Mail :</label>
 								<br />
 								<input type="email" name="mail" id="mail" placeholder="contact@example.com" />
