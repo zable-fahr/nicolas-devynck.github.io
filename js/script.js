@@ -14,14 +14,14 @@ $(window).scroll(function () {
 	if (iCurScrollPos > iScrollPos) { // scroll down 
 		$("#engr1").rotate(-iCurScrollPos);
 		$("#engr2").rotate(iCurScrollPos*2+25);
-		$("#engr3").css({ top : iCurScrollPos-100 });
+		$("#engr3").css({ top : iCurScrollPos-50 });
 		$("#engr3").rotate(iCurScrollPos);
 		$("#engr4").rotate(iCurScrollPos);
 		$("#engr5").rotate(-iCurScrollPos*2);
 	} else { // scroll up
 		$("#engr1").rotate(-iCurScrollPos);
 		$("#engr2").rotate(iCurScrollPos*2+25);
-		$("#engr3").css({ top : iCurScrollPos-100 });
+		$("#engr3").css({ top : iCurScrollPos-50 });
 		$("#engr3").rotate(iCurScrollPos);
 		$("#engr4").rotate(iCurScrollPos);
 		$("#engr5").rotate(-iCurScrollPos*2);
