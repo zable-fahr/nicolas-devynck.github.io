@@ -75,7 +75,7 @@
 							<div class="input_contact">
 								<label for="nom">Nom & Prénom :</label>
 								<br />
-								<input type="text" name="nom" id="nom" required />
+								<input type="text" name="nom" id="nom" />
 								<br />
 								<label for="site">Site Web :</label>
 								<br />
@@ -83,18 +83,18 @@
 								<br />
 								<label for="mail">Mail :</label>
 								<br />
-								<input type="email" name="mail" id="mail" placeholder="contact@example.com" required />
+								<input type="email" name="mail" id="mail" placeholder="contact@example.com" />
 								<br />
 							</div>
 							<h3>Details du message :</h3>
 							<div class="input_contact">
 								<label for="sujet">Sujet :</label>
 								<br />
-								<input type="text" name="sujet" id="sujet" required />
+								<input type="text" name="sujet" id="sujet" />
 								<br />
 								<label for="msg">Message :</label>
 								<br />
-								<textarea name="msg" id="msg" required></textarea>
+								<textarea name="msg" id="msg"></textarea>
 								<div class="bouton">
 									<input type="submit" value="Envoyer" />
 								</div>

@@ -6,7 +6,7 @@
 	$site = addslashes($_POST['site']);
 	
 	function verifNom($fnom) { //Verification du champ nom
-		if (!preg_match('/[^a-z_\-0-9]/i', $fmail) || strlen($fnom) < 2 || strlen($fnom) > 25) { return FALSE; }
+		if (!preg_match('/^[A-Za-z0-9_]+$/', $fmail) && strlen($fnom) < 2 || strlen($fnom) > 25) { return FALSE; }
 		else { return TRUE; }
 	}
 	function verifSujet($fsujet) { //Verification du champ sujet
@@ -18,7 +18,7 @@
 		else { return TRUE; }
 	}
 	function verifMail($fmail) {
-		if (!preg_match('#^[\w.-]+@[\w.-]+\.[a-z]{2,6}$#i', $fmail) || strlen($fmail) < 7 || strlen($fmail) > 25) { return FALSE; }
+		if (!preg_match('#^[\w.-]+@[\w.-]+\.[a-z]{2,6}$#i', $fmail) && strlen($fmail) < 7 || strlen($fmail) > 25) { return FALSE; }
 		else { return TRUE; }
 	}
 	
@@ -63,7 +63,7 @@
 	 
 		// si le formulaire sans ajax msg de validation
 		if (!isset($_SERVER['HTTP_X_REQUESTED_WITH']) && !strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
-			echo "<span style='color:#3B7A32;'>Votre requête a bien été traitée!</span><br /> \n\r";
+			echo "Votre requête a bien été traitée!<br /> \n\r";
 			echo "<a href=".$_SERVER['HTTP_REFERER']." ><-- Retour</a>";
 		}
 		// si le formulaire avec ajax envois d'information a traiter 
@@ -78,7 +78,7 @@
 			for ($i=0; $i<sizeof($erreur); $i++) {
 				for ($j=0; $j<sizeof($erreur[$i]); $j++) {
 					if (!$erreur[$i][$j]) {
-						echo "<span>le champs <b>".$erreur[$i][0]."</b> est incorrecte :</span><br />\n\n<span style='color:#B23A3A;'><b>".$erreur[$i][1]."</b></span><br /><br />\n\n";						
+						echo "le champs <b>".$erreur[$i][0]."</b> est incorrecte :<br />\n\n<b>".$erreur[$i][1]."</b><br /><br />\n\n";						
 					}
 				}
 			}
