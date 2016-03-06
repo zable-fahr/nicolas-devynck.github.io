@@ -14,7 +14,6 @@ Lien Externe
 --------------------------------------------------------------------
 */ ?>
 
-<?php echo "\t\t\t\t"; ?>	<p>Nicolas est né le 20 décembre 1984 à Carcassonne.</p>
 <?php echo "\t\t\t\t"; ?>	<p>Nicolas est né dans une petite ville de l’Aude où il va passer la plus grande partie de son enfance. A l'âge de 16 ans par un concours de circonstance il devient l’heureux possesseur d’un ordinateur. Mordu par la technologie il obtient  très vite un niveau plus que satisfaisant. A l’âge de 18ans, sont niveau scolaire lui fait abandonner l’idée d’en faire son métier et ce redirige dans la restauration.</p>
 <?php echo "\t\t\t\t"; ?>	<p>Âpres 10ans de bon et loyaux service dans les métiers de la bouche il prend conscience qu’il est finalement capable et décide de prendre les moyens pour vivre de l’informatique et en 2013 passe avec succès un équivalent du bac scientifique qui lui ouvre toute les porte des universités. Et fini par intégrer Simplon qui lui donner une équivalence d’un bac +2  développement web</p>
 <?php echo "\t\t\t\t"; ?>	<p>Mais Nicolas refuse de s’en tenir là et compte bien continuer ça folle aventure dans le numérique.</p>
