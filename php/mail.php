@@ -2,11 +2,11 @@
 	$sujet = addslashes($_POST['sujet']);
 	$mail = $_POST['mail'];
 	$msg = addslashes($_POST['msg']);
-	$nom = $_POST['nom'];
+	$nom = addslashes($_POST['nom']);
 	$site = addslashes($_POST['site']);
 	
 	function verifNom($fnom) { //Verification du champ nom
-		if (!preg_match('/^[A-Za-z0-9_]+$/', $fmail) && strlen($fnom) < 2 || strlen($fnom) > 25) { return FALSE; }
+		if (strlen($fnom) < 2 || strlen($fnom) > 25) { return FALSE; }
 		else { return TRUE; }
 	}
 	function verifSujet($fsujet) { //Verification du champ sujet
@@ -18,7 +18,7 @@
 		else { return TRUE; }
 	}
 	function verifMail($fmail) {
-		if (!preg_match('#^[\w.-]+@[\w.-]+\.[a-z]{2,6}$#i', $fmail) && strlen($fmail) < 7 || strlen($fmail) > 25) { return FALSE; }
+		if (!preg_match('#^[\w.-]+@[\w.-]+\.[a-z]{2,6}$#i', $fmail) || strlen($fmail) < 7 || strlen($fmail) > 25) { return FALSE; }
 		else { return TRUE; }
 	}
 	

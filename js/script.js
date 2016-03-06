@@ -40,13 +40,13 @@ $(function(){
 				// si c'est valide on vide le formulaire et envois d'un mesage de validation
 				if (tabJSon[0][2] && tabJSon[1][2] && tabJSon[2][2] && tabJSon[3][2]) {
 					document.getElementById('sujet').value = '';
-					document.getElementById('sujet').style.backgroundColor = '#FF6347';
+					document.getElementById('sujet').style.backgroundColor = '#ffc354';
 					document.getElementById('msg').value = '';
-					document.getElementById('msg').style.backgroundColor = '#FF6347';
+					document.getElementById('msg').style.backgroundColor = '#ffc354';
 					document.getElementById('nom').value = '';
-					document.getElementById('nom').style.backgroundColor = '#FF6347';
+					document.getElementById('nom').style.backgroundColor = '#ffc354';
 					document.getElementById('mail').value = '';
-					document.getElementById('mail').style.backgroundColor = '#FF6347';
+					document.getElementById('mail').style.backgroundColor = '#ffc354';
 					alert('Votre requête a bien été traitée!');
 				}
 				// si il y a des erreur on les identifis et on indique l'erreur
