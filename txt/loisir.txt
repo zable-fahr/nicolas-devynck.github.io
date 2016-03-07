@@ -15,5 +15,7 @@ Lien Externe
 */ ?>
 
 <?php echo "\t\t\t\t"; ?>	<p>
-<?php echo "\t\t\t\t"; ?>		Voyage en France ou à l'étranger, Electronique (Arduino & Raspberry Pi), Histoire Religieuse.
+<?php echo "\t\t\t\t"; ?>		Voyage en France et à l'étranger,<br />
+<?php echo "\t\t\t\t"; ?>		Electronique (Arduino & Raspberry Pi),<br />
+<?php echo "\t\t\t\t"; ?>		Histoire Religieuse.
 <?php echo "\t\t\t\t"; ?>	</p>

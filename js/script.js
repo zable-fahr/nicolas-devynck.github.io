@@ -13,8 +13,8 @@ $(window).scroll(function () {
     var iCurScrollPos = $(this).scrollTop(); // on passe la position du scroll
 	if (iCurScrollPos > iScrollPos) { // scroll down
 		$("#engr1").rotate(-iCurScrollPos); //.rotate = plugin rotate
-		$("#engr2").rotate(iCurScrollPos*2+25); // *2 car engr2 et 2 fois plus petit et +25 pour aligner les 2 engr 
-		$("#engr3").css({ top : iCurScrollPos-100 }); //-100 taile de engr3 pour le cacher de l'ecran quant le scoll et en haut
+		$("#engr2").rotate(iCurScrollPos*2+25); // *2 car engr2 et 2 fois plus petit qu'engr1 et +25 pour aligner les 2
+		$("#engr3").css({ top : iCurScrollPos-100 }); //-100 pour le cacher engr3 de l'ecran quant le scoll et en haut
 		$("#engr3").rotate(iCurScrollPos);
 		$("#engr4").rotate(iCurScrollPos);
 		$("#engr5").rotate(-iCurScrollPos*2);
@@ -32,13 +32,13 @@ $(window).scroll(function () {
 $(function(){
 	$("#formulaire").submit(function(event){ // quant le formulaire et envoyer
 		$.ajax({ // on passe par ajax
-			type : "POST", // GET vs POST ici POST car le script php et construit aussi pour qu'il fonctione si JS et desactiver
+			type : "POST", // GET vs POST ici POST car le script php et construit aussi pour qu'il fonctione si JS et désactiver
 			url: $(this).attr("action"), // recuperation de l'action du formulaire
 			data: $(this).serialize(),
 			success : function(retPHP) { // traitement des retour php
-				var tabJSon = JSON.parse(retPHP); // JSON.parse car echo renvois un 'string'
+				var tabJSon = JSON.parse(retPHP); // JSON.parse car echo renvoie un 'string'
 				// si le mail est bien partit on vide le formulaire
-				if (tabJSon[0][2] && tabJSon[1][2] && tabJSon[2][2] && tabJSon[3][2]) { // tabJSon[i][2] = le boolean renvoyer par php et si tout est TRUE alors tout c'est bien passer'
+				if (tabJSon[0][2] && tabJSon[1][2] && tabJSon[2][2] && tabJSon[3][2]) { // tabJSon[i][2] = le boolean renvoyée par php et si tout est TRUE alors tout c'est bien passer'
 					for (var i=0; i<tabJSon.length; i++) {
 						document.getElementById(tabJSon[i][0]).value = '';
 						document.getElementById(tabJSon[i][0]).style.backgroundColor = '#ffc354';
@@ -48,12 +48,12 @@ $(function(){
 				// si il y a des erreur
 				else {
 					for (var i=0; i<tabJSon.length; i++) {
-						if (!tabJSon[i][2]) { // on vas chercher tous les FALSE renvoyer par php
-							document.getElementById(tabJSon[i][0]).value = tabJSon[i][1]; // on renvois ce que la personne a taper
+						if (!tabJSon[i][2]) { // on vas chercher tous les FALSE renvoyée par php
+							document.getElementById(tabJSon[i][0]).value = tabJSon[i][1]; // on renvois ce que la personne à taper
 							document.getElementById(tabJSon[i][0]).style.backgroundColor = '#FF6347'; // et on passe le champs en rouge
 						}
 						else { //on recupe tout les TRUE
-							document.getElementById(tabJSon[i][0]).value = tabJSon[i][1]; // on renvois ce que la personne a taper
+							document.getElementById(tabJSon[i][0]).value = tabJSon[i][1]; // on renvois ce que la personne à taper
 							document.getElementById(tabJSon[i][0]).style.backgroundColor = '#98FB98'; // et on passe le champs en vert
 						}
 					}

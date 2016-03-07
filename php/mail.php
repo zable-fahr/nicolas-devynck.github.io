@@ -1,5 +1,5 @@
 <?php
-	// on passe les $_POST dans des variable, avec addslashes pour les champs qui n'on pas de paterne (on c'est jamais) et wordwrap qui ajoute un retour de ligne tout les 70 caractaire
+	// on passe les $_POST dans des variables, avec addslashes pour les champs qui n'on pas de paterne (on c'est jamais) et wordwrap qui ajoute un retour de ligne tout les 70 caractaire
 	$sujet = addslashes($_POST['sujet']); 
 	$mail = $_POST['mail'];
 	$msg = wordwrap(addslashes($_POST['msg']), 70, "\r\n");
