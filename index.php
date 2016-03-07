@@ -116,7 +116,7 @@
 				<div class="clear"></div>
 			</footer>
 		</div>
-		<!-- Script Vérification formulaire, Engrenage, Scroll sur les ancres -->
+		<!-- Script ajax, Engrenage, Scroll sur les ancres -->
 		<script type="text/javascript" src="js/script.js"></script>
 	</body>
 </html>
