@@ -47,11 +47,11 @@
     $sql = 'INSERT INTO statistiques VALUES("", "'.$date_courante.'", "'.$page_courante.'", "'.$ip.'", "'.$host.'", "'.$navigateur.'", "'.$referer.'")';
     mysql_query($sql) or die('Erreur : '.$sql.'<br />'.mysql_error());
 
-	//suprime dans la base de données tout ce qu'il y plus de 5ans
-	$supp5ans = date('Y')-5;
-	$sql = 'DELETE FROM `statistiques` WHERE `date` = SUBSTR(date, 1, 4) = '.$supp5ans.'';
-	mysql_query($sql) or die('Erreur : '.$sql.'<br />'.mysql_error());
-	
+    //suprime dans la base de données tout ce qu'il y plus de 5ans
+    $supp5ans = date('Y')-5;
+    $sql = 'DELETE FROM `statistiques` WHERE `date` = SUBSTR(date, 1, 4) = '.$supp5ans.'';
+    mysql_query($sql) or die('Erreur : '.$sql.'<br />'.mysql_error());
+
     // fermeture de la connexion à la base de données
     mysql_close();
 ?>

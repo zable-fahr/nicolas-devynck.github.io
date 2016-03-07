@@ -1,1 +1,2 @@
-http://nicolas-devynck.github.io/
+# Curiculum Vitae
+http://www.nicolas-devynck.fr/
