@@ -61,7 +61,7 @@
 			<article>
 				<div class="article">
 					<h2 id="experiance">Expériences</h2>
-					<!-- Expériences dans txt/experiance.txt --><?php include 'txt/experiance.txt'; ?>
+					<!-- Expériences dans txt/experience.txt --><?php include 'txt/experience.txt'; ?>
 					<a class="scrollTo ancre"  href="#cadre">^Haut de page^</a>
 					
 					<h2 id="formation">Formations</h2>

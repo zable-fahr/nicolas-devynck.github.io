@@ -20,7 +20,7 @@
     echo 'Voir les statistiques d\'un autre jour :<br /><br />';
 
     // formulaire permettant de choisir une date afin de voir les statistiques de cette date
-    echo '<form action="./stat_jour.php" method="post">';
+    echo '<form action="./index.php" method="post">';
     echo '<select name="jour">';
     // on boucle sur 31 jours
     for($i = 1; $i <= 31; $i++) {
