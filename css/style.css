@@ -17,9 +17,11 @@ a:hover {
 	color: #555555;
 }
 h1 {
-	font-size: 20px;
-	margin: 2px 0px 2px -10px;
-	padding : 5px 0px 5px 10px;
+	font-size: 2vw;
+	margin: 2px 2px 2px 0px;
+	padding : 0px;
+	border-bottom: solid 2px #888888;
+	width: 51%;
 }
 h2 {
 	border-bottom: solid 2px #888888;
@@ -28,11 +30,20 @@ h3 {
 	font-size: 18px;
 }
 
-/* on planque le header */
+/* header */
 header {
+	margin-top: 25px;
 	padding: 1%;
-	display: none;
 }
+#sstitre {
+	font-size: 2vw;
+	color: #834231;
+	margin-left: 25.5%;
+	border-bottom: solid 2px #888888;
+}
+#url {
+	display:none;
+	}
 /* logo */
 #logo {
 	background-image: url(logo.png);
@@ -181,6 +192,16 @@ textarea {
 /* Media Query */
 /* affichage pour tablette */
 @media screen and (max-width: 880px) {
+	header {
+		margin-top: 40px;
+		padding: 1%;
+	}
+	#sstitre, h1 {
+		font-size: 3vw;
+	}
+	h1 {
+		width: 59%;
+	}
 	body {
 		padding: 0% 5% 0% 5%;
 	}
@@ -195,9 +216,6 @@ textarea {
 		width: 100%;
 		border: none;
 	}
-	.aside {
-		margin-top: 25px;
-	}
 	.input_contact {
 		width: 65%;
 	}
@@ -207,6 +225,16 @@ textarea {
 }
 /* affichage pour telephone */
 @media screen and (max-width: 495px) {
+	header {
+		margin-top: 45px;
+		padding: 1%;
+	}
+	#sstitre, h1 {
+		font-size: 5vw;
+	}
+	h1 {
+		width: 76%;
+	}	
 	body {
 		padding: 0%;
 	}
@@ -219,6 +247,18 @@ textarea {
 }
 /* Vertion imprimente */
 @media print {
+	#sstitre, h1 {
+		font-size: 3vw;
+		border: none;
+		margin-left: 0px;
+		border-bottom: none;
+	}
+	#url {
+		display:inline;
+	}
+	h1 {
+		width: 76%;
+	}
 	body {
 		background-color: #ffffff;
 		padding: 0%;
@@ -228,10 +268,6 @@ textarea {
 	#cadre {
 		border: none;
 		padding: 0%;
-	}
-	/* on affiche le header */
-	header {
-		display: block;
 	}
 	nav, .ancre, footer, #engr1, #engr2, #engr3, .contact, #logo {
 		display: none;

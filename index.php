@@ -23,7 +23,7 @@
 		<script type="text/javascript" src="js/jQuery.js"></script>
 		<script type="text/javascript" src="js/jQueryRotate.js"></script>
 		<link rel="icon" type="image/png" href="css/logo.png" />
-		<?php include 'php/conteur.php'; ?>
+		<?php // include 'php/conteur.php'; ?>
 
 	</head>
 	<body>
@@ -43,10 +43,10 @@
 			</div>
 		</nav>
 		<div id="cadre">
-			<!-- Header pour la vertion print (cacher) -->
 			<header>
 				<h1>Nicolas DEVYNCK</h1>
-				www.nicolas-devynck.fr
+				<div id="sstitre">Développeur web</div>
+				<div id="url">www.nicolas-devynck.fr</div>
 			</header>
 			<aside>
 				<div class="aside">
@@ -71,7 +71,7 @@
 						<h2 id="contact">Contactez moi</h2>
 						<!-- Formulaire de contacte -->
 						<form method="post" action="php/mail.php" id="formulaire">
-							<h3>Vos Coordonners :</h3>
+							<h3>Vos Coordonnées :</h3>
 							<div class="input_contact">
 								<label for="nom">Nom & Prénom :</label>
 								<br />
