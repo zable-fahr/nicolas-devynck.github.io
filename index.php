@@ -43,10 +43,10 @@
 			</div>
 		</nav>
 		<div id="cadre">
+			<!-- header -->
 			<header>
-				<h1>Nicolas DEVYNCK</h1>
-				<div id="sstitre">Développeur web</div>
-				<div id="url">www.nicolas-devynck.fr</div>
+				<img src="css/titre.png" alt="Devynck Nicolas Développeur Web" />
+				<div id="url">www.nicolas-devynck.fr</div> 
 			</header>
 			<aside>
 				<div class="aside">
