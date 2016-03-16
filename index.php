@@ -23,7 +23,7 @@
 		<script type="text/javascript" src="js/jQuery.js"></script>
 		<script type="text/javascript" src="js/jQueryRotate.js"></script>
 		<link rel="icon" type="image/png" href="css/logo.png" />
-		<?php // include 'php/conteur.php'; ?>
+		<?php include 'php/conteur.php'; ?>
 
 	</head>
 	<body>
