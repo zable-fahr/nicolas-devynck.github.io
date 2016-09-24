@@ -16,10 +16,10 @@ Lien Externe
 
 <?php echo "\t\t\t\t"; ?>	<div class="date">2016</div>
 <?php echo "\t\t\t\t"; ?>	<div class="poste">
-<?php echo "\t\t\t\t"; ?>		Participation au kidsCoding en partenariat avec  « <a href="http://kidscodingclub.org/" target="_blank">Kids Coding club</a> »
+<?php echo "\t\t\t\t"; ?>		Développement de « <a href="https://www.microsoft.com/fr-fr/store/p/ze-mastermind/9nblggh4vl3q" target="_blank">Ze Mastermind</a> » Pour la Certification « <a href="http://simplonline.co/" target="_blank">Simplon</a> »
 <?php echo "\t\t\t\t"; ?>		<br />
 <?php echo "\t\t\t\t"; ?>		<span>
-<?php echo "\t\t\t\t"; ?>			Initier les collégiens du grand Narbonne au code informatique.
+<?php echo "\t\t\t\t"; ?>			Application Universelle windows 10, clasement mondial administrable.
 <?php echo "\t\t\t\t"; ?>		</span>
 <?php echo "\t\t\t\t"; ?>	</div>
 <?php echo "\t\t\t\t"; ?>	<div class="date">2015</div>
