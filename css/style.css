@@ -33,7 +33,7 @@ header img {
 	width: 90%;
 	height: 90%;
 }
-#url {
+#url, #mail {
 	display:none;
 }
 /* logo */
@@ -228,8 +228,10 @@ textarea {
 }
 /* Vertion imprimente */
 @media print {
-	#url {
-		display:inline;
+	#url, #mail {
+		font-size: 16px;
+		font-weight: bold;
+		display:block;
 	}
 	h1 {
 		width: 76%;
@@ -250,5 +252,8 @@ textarea {
 	.aside, .article {
 		width: 100%;
 		border: none;
+	}
+	aside {
+		display: none;
 	}
 }
