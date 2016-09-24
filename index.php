@@ -18,6 +18,8 @@
 		<meta name="Distribution" content="global">
 		<meta name="Geography" content="France">
 		<meta name="Category" content="internet">
+		<!-- Meta pour les ecran mobile HD -->
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
 		<!-- Liens JQuery plus son plugin, CSS -->
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<script type="text/javascript" src="js/jQuery.js"></script>
