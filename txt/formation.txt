@@ -16,10 +16,10 @@ Lien Externe
 
 <?php echo "\t\t\t\t"; ?>	<div class="date">2015 2016</div>
 <?php echo "\t\t\t\t"; ?>	<div class="poste">
-<?php echo "\t\t\t\t"; ?>		Développement web et application mobile avec « <a href="http://simplonline.co/" target="_blank">Simplon</a> » labelliser grande ecole du numérique.
+<?php echo "\t\t\t\t"; ?>		Préparation et validation du certificat développement web et application mobile avec « <a href="http://simplonline.co/" target="_blank">Simplon</a> » labelliser grande ecole du numérique.
 <?php echo "\t\t\t\t"; ?>		<br />
 <?php echo "\t\t\t\t"; ?>		<span>
-<?php echo "\t\t\t\t"; ?>			Apprentissage des langages informatique : PHP, JavaScript, CSS, SQL. Et de divers frameworks : JQuery, Bootstrap, Symfony.
+<?php echo "\t\t\t\t"; ?>			Apprentissage des langages informatique : PHP, JavaScript, CSS, SQL. Et de divers frameworks : JQuery, Bootstrap.
 <?php echo "\t\t\t\t"; ?>			<br />
 <?php echo "\t\t\t\t"; ?>			Utilisation des outils : Git, cURL, LAMP (Linux, Apache, MySQL, PHP), Cordova .
 <?php echo "\t\t\t\t"; ?>		</span>
