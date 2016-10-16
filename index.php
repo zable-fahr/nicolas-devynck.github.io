@@ -57,19 +57,19 @@
 			<aside>
 				<div class="aside">
 					<h2 id="info">Qui-suis-je</h2>
-					<!-- Qui-suis-je dans txt/info.txt --><?php include 'txt/info.txt'; ?>
+					<!-- Qui-suis-je --><?php include 'txt/info.txt'; ?>
 					<a class="scrollTo ancre" href="#cadre">^Haut de page^</a>
 					<!-- continuer contact ici -->
 				</div>
 			</aside>
 			<article>
 				<div class="article">
-					<h2 id="experiance">Expériences</h2>
-					<!-- Expériences dans txt/experience.txt --><?php include 'txt/experience.txt'; ?>
+					<h2 id="Projet">Projet</h2>
+					<!-- Projet --><?php include 'txt/experience.txt'; ?>
 					<a class="scrollTo ancre"  href="#cadre">^Haut de page^</a>
 					
 					<h2 id="formation">Formations</h2>
-					<!-- Formations dans txt/formation.txt --><?php include 'txt/formation.txt'; ?>
+					<!-- Formations --><?php include 'txt/formation.txt'; ?>
 					<a class="scrollTo ancre" href="#cadre">^Haut de page^</a>
 					<div class="contact">
 						<h2 id="contact">Contactez moi</h2>

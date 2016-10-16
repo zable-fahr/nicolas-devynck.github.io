@@ -71,6 +71,7 @@ header img {
 	padding: 5% 5% 0% 5%;
 }
 .aside, .footer, .article {
+	text-align:justify;
 	float: left;
 	position: relative;
 	padding: 1%;
