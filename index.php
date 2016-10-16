@@ -52,7 +52,7 @@
 			<header>
 				<img src="css/titre.png" alt="Devynck Nicolas Développeur Web" />
 				<div id="url">www.nicolas-devynck.fr</div>
-				<div id="mail">contact@nicolas-devynck.fr</div> 
+				<div id="mail_imp">contact@nicolas-devynck.fr</div> 
 			</header>
 			<aside>
 				<div class="aside">
