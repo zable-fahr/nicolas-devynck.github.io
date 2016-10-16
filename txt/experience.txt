@@ -30,11 +30,3 @@ Lien Externe
 <?php echo "\t\t\t\t"; ?>			En équipe, développer en 48 heures une application mobile basée sur un cahier des charges.
 <?php echo "\t\t\t\t"; ?>		</span>
 <?php echo "\t\t\t\t"; ?>	</div>
-<?php echo "\t\t\t\t"; ?>	<div class="date">2006 2015</div>
-<?php echo "\t\t\t\t"; ?>	<div class="poste">
-<?php echo "\t\t\t\t"; ?>		Divers contrats dans la restauration sur Narbonne et en France.
-<?php echo "\t\t\t\t"; ?>		<br />
-<?php echo "\t\t\t\t"; ?>		<span>
-<?php echo "\t\t\t\t"; ?>			Travail en équipe, responsable de plusieurs types de postes, gestion des stocks, création de fiches techniques, délégation de tâches, respecter les normes en vigueur (HACCP).
-<?php echo "\t\t\t\t"; ?>		</span>
-<?php echo "\t\t\t\t"; ?>	</div>

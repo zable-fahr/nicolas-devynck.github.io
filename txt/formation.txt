@@ -29,8 +29,3 @@ Lien Externe
 <?php echo "\t\t\t\t"; ?>		Préparation et validation au diplôme DAEU option scientifique (Diplôme d’accès aux études universitaires) à «<a href="https://www.iutbeziers.fr/" target="_blank"> l’IUT de Béziers</a> ».
 <?php echo "\t\t\t\t"; ?>		<br />
 <?php echo "\t\t\t\t"; ?>	</div>
-<?php echo "\t\t\t\t"; ?>	<div class="date">2007 2008</div>
-<?php echo "\t\t\t\t"; ?>	<div class="poste">
-<?php echo "\t\t\t\t"; ?>		Préparation et validation au diplôme CQP restauration (Certificat de qualification professionnelle) en alternance dans la franchise «<a href="http://www.groupelacasa.com/" target="_blank"> Casa Pizza Grill</a> » et « <a href="www.hcconseil.org/">HC Conseil</a> » de Narbonne.
-<?php echo "\t\t\t\t"; ?>		<br />
-<?php echo "\t\t\t\t"; ?>	</div>
