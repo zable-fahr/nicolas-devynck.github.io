@@ -1,4 +1,4 @@
-<?php /*
+﻿<?php /*
 -----------------------------< README >-----------------------------
 <div class="date"></div>
 Date du poste
@@ -28,17 +28,9 @@ Lien Externe
 <?php echo "\t\t\t\t"; ?>	<div class="poste">
 <?php echo "\t\t\t\t"; ?>		Préparation et validation au diplôme DAEU option scientifique (Diplôme d’accès aux études universitaires) à «<a href="https://www.iutbeziers.fr/" target="_blank"> l’IUT de Béziers</a> ».
 <?php echo "\t\t\t\t"; ?>		<br />
-<?php echo "\t\t\t\t"; ?>		<span>
-<?php echo "\t\t\t\t"; ?>			Bac pour adulte en 4 matières (Maths, Français, Physique et Chimie).
-<?php echo "\t\t\t\t"; ?>		</span>
 <?php echo "\t\t\t\t"; ?>	</div>
 <?php echo "\t\t\t\t"; ?>	<div class="date">2007 2008</div>
 <?php echo "\t\t\t\t"; ?>	<div class="poste">
-<?php echo "\t\t\t\t"; ?>		Préparation et validation au diplôme CQP restauration (Certificat de qualification professionnelle) en alternance dans la franchise «<a href="http://www.groupelacasa.com/" target="_blank"> Casa Pizza Grill</a> » et « <a href="www.hcconseil.org/">H&amp;C Conseil</a> » de Narbonne.
+<?php echo "\t\t\t\t"; ?>		Préparation et validation au diplôme CQP restauration (Certificat de qualification professionnelle) en alternance dans la franchise «<a href="http://www.groupelacasa.com/" target="_blank"> Casa Pizza Grill</a> » et « <a href="www.hcconseil.org/">HC Conseil</a> » de Narbonne.
 <?php echo "\t\t\t\t"; ?>		<br />
-<?php echo "\t\t\t\t"; ?>		<span>
-<?php echo "\t\t\t\t"; ?>			Connaissance des produits et des techniques de préparation
-<?php echo "\t\t\t\t"; ?>			<br />
-<?php echo "\t\t\t\t"; ?>			Mise en place et dressage sur assiette des entrées, desserts, plats, pizzas.
-<?php echo "\t\t\t\t"; ?>		</span>
 <?php echo "\t\t\t\t"; ?>	</div>

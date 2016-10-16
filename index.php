@@ -38,7 +38,10 @@
 				<!-- Logo -->
 				<div id="logo"></div>
 				<!-- Menu -->
-				<span>[<a class="scrollTo" href="#experiance"> Expériences </a>]</span> <span>[<a class="scrollTo" href="#formation"> Formations </a>]</span> <span>[<a class="scrollTo" href="#info"> Qui-suis-je </a>]</span> <span>[<a class="scrollTo" href="#loisir"> loisirs </a>]</span> <span>[<a class="scrollTo" href="#contact"> Contact </a>]</span>
+				<span>[<a class="scrollTo" href="#experiance"> Expériences </a>]</span>
+				<span>[<a class="scrollTo" href="#formation"> Formations </a>]</span> 
+				<span>[<a class="scrollTo" href="#info"> Qui-suis-je </a>]</span> 
+				<span>[<a class="scrollTo" href="#contact"> Contact </a>]</span>
 				<!-- Engrenage JQuery Bis -->
 				<div id="engr4"></div>
 				<div id="engr5"></div>
@@ -56,9 +59,7 @@
 					<h2 id="info">Qui-suis-je</h2>
 					<!-- Qui-suis-je dans txt/info.txt --><?php include 'txt/info.txt'; ?>
 					<a class="scrollTo ancre" href="#cadre">^Haut de page^</a>
-					<h2 id="loisir">loisirs</h2>
-					<!-- Loisirs dans txt/loisir.txt --><?php include 'txt/loisir.txt'; ?>
-					<a class="scrollTo ancre" href="#cadre">^Haut de page^</a>
+					<!-- continuer contact ici -->
 				</div>
 			</aside>
 			<article>
@@ -113,7 +114,7 @@
 					<!-- rezo -->
 					<div class="rezo">
 						<a href="http://github.com/nicolas-devynck" target="_blank"><img src="css/github.png" height="35" width="35" alt="Github" /><span>Sur Github</span></a>
-						<a href="http://www.facebook.com/devynck.nicolas" target="_blank"><img src="css/fb.png" height="35" width="35" alt="Facebook" /><span>Sur Facebook</span></a>
+						<a href="http://www.facebook.com/devynck.nicolas" target="_blank"><img src="css/fb.png" height="35" width="35" alt="Page FB" /><span>Sur Facebook</span></a>
 					</div>
 				</div>
 				<div class="clear"></div>
