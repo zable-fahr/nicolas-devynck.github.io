@@ -18,6 +18,10 @@ $(window).scroll(function () {
 		$("#engr3").rotate(iCurScrollPos);
 		$("#engr4").rotate(iCurScrollPos);
 		$("#engr5").rotate(-iCurScrollPos*2);
+		$("#engr6").rotate(iCurScrollPos*2);
+		$("#engr7").rotate(iCurScrollPos*2);
+		$("#engr8").rotate(iCurScrollPos*2);
+		$("#engr9").rotate(iCurScrollPos*2);
 	} else { // scroll up
 		$("#engr1").rotate(-iCurScrollPos);
 		$("#engr2").rotate(iCurScrollPos*2+25);
@@ -25,8 +29,18 @@ $(window).scroll(function () {
 		$("#engr3").rotate(iCurScrollPos);
 		$("#engr4").rotate(iCurScrollPos);
 		$("#engr5").rotate(-iCurScrollPos*2);
+		$("#engr6").rotate(iCurScrollPos*2);
+		$("#engr7").rotate(iCurScrollPos*2);
+		$("#engr8").rotate(iCurScrollPos*2);
+		$("#engr9").rotate(iCurScrollPos*2);
 	}
 	iScrollPos = iCurScrollPos;
+});
+// fonction accordion jquery ui
+$(function() {
+  $( ".accordion" ).accordion({
+    heightStyle: "content"
+  });
 });
 //foncttion ajax pour le formulaire
 $(function(){

@@ -18,6 +18,7 @@ a:hover {
 }
 h2 {
 	border-bottom: solid 2px #888888;
+	text-align: right;
 }
 h3 {
 	font-size: 18px;
@@ -101,18 +102,9 @@ header img {
 	border-top: dashed 1px #ffc354;
 	border-bottom: dashed 1px #ffc354;
 }
-.poste:hover {
-	background-color: #FBF9F4;
-}
 .poste span {
 	color: #333333;
 	font-size: 14px;
-}
-.ancre {
-	display: block;
-	text-align: center;
-	padding: 14px;
-	font-weight: bold;
 }
 /* rezo */
 .rezo {
@@ -142,11 +134,29 @@ textarea {
 	text-align: center;
 }
 /* Engrenage JQuery */
+.cache_engrenage {
+	margin-bottom:-75px;
+	background-color:#FFF;
+	height: 25px;
+	position: relative;
+	top: -50px;
+}
 #engr1, #engr2, #engr3, #engr4, #engr5 {
 	background-image: url(engr.png);
 	background-position: 50% 50%;
 	background-size: cover;
 	position: fixed;
+}
+#engr6, #engr7, #engr8, #engr9 {
+	background-image: url(engr.png);
+	background-size: 50px 50px;
+	background-size: cover;
+	position: relative;
+	top: -47px;
+	left: -3px;
+	width: 50px;
+	height: 50px;
+	margin-bottom: -20px;
 }
 #engr1 {
 	width: 250px;

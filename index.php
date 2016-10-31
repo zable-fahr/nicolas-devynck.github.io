@@ -21,10 +21,13 @@
 		<!-- Meta pour les ecran mobile HD -->
 		<meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
 		<!-- Liens JQuery plus son plugin, CSS -->
-		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<script type="text/javascript" src="js/jQuery.js"></script>
 		<script type="text/javascript" src="js/jQueryRotate.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="js/jquery-ui.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="icon" type="image/png" href="css/logo.png" />
+		
 		<?php // include 'php/conteur.php'; ?>
 
 	</head>
@@ -32,7 +35,7 @@
 		<!-- Engrenage JQuery -->
 		<div id="engr1"></div>
 		<div id="engr2"></div>
-		<div id="engr3"></div>
+		<div id="engr3"></div
 		<nav>
 			<div class="nav">
 				<!-- Logo -->
@@ -56,23 +59,28 @@
 			</header>
 			<aside>
 				<div class="aside">
-					<h2 id="info">Qui-suis-je</h2>
+					<h2 id="info">Brèves</h2><div id="engr8"></div>
+					<div class="cache_engrenage"></div>
 					<!-- Qui-suis-je --><?php include 'txt/info.txt'; ?>
-					<a class="scrollTo ancre" href="#cadre">^Haut de page^</a>
 					<!-- continuer contact ici -->
 				</div>
 			</aside>
 			<article>
 				<div class="article">
-					<h2 id="Projet">Projet</h2>
-					<!-- Projet --><?php include 'txt/experience.txt'; ?>
-					<a class="scrollTo ancre"  href="#cadre">^Haut de page^</a>
+					<h2 id="Projet">Projet</h2><div id="engr6"></div>
+					<div class="cache_engrenage"></div>
+					<div class="accordion">
+						<!-- Projet --><?php include 'txt/experience.txt'; ?>
+					</div>
 					
-					<h2 id="formation">Formations</h2>
-					<!-- Formations --><?php include 'txt/formation.txt'; ?>
-					<a class="scrollTo ancre" href="#cadre">^Haut de page^</a>
+					<h2 id="formation">Formations</h2><div id="engr7"></div>
+					<div class="cache_engrenage"></div>
+					<div class="accordion">
+						<!-- Formations --><?php include 'txt/formation.txt'; ?>
+					</div>
 					<div class="contact">
-						<h2 id="contact">Contactez moi</h2>
+						<h2 id="contact">Contactez moi</h2><div id="engr9"></div>
+						<div class="cache_engrenage"></div>
 						<!-- Formulaire de contacte -->
 						<form method="post" action="php/mail.php" id="formulaire">
 							<h3>Vos Coordonnées :</h3>
@@ -101,7 +109,6 @@
 							</div>
 						</form>
 					</div>
-					<a class="scrollTo ancre" href="#cadre">^Haut de page^</a>
 					<div class="clear"></div>
 				</div>
 			</article>
