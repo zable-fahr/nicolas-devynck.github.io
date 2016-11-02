@@ -93,19 +93,6 @@ header img {
 	width: 74%;
 	border-left: solid 2px #888888;
 }
-/* CSS contenu de article  */
-.date {
-	font-weight: bold;
-	margin-top: 10px;
-}
-.poste {
-	border-top: dashed 1px #ffc354;
-	border-bottom: dashed 1px #ffc354;
-}
-.poste span {
-	color: #333333;
-	font-size: 14px;
-}
 /* rezo */
 .rezo {
 	text-align: center;
@@ -127,6 +114,16 @@ input[type=text], input[type=email], input[type=url], textarea {
 	background-color: #ffc354;
 	width: 100%;
 }
+::-webkit-input-placeholder { /* Chrome */
+	color: black;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: black;
+  opacity: 1;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: black;
+}
 textarea {
 	height: 150px;
 }
@@ -135,7 +132,7 @@ textarea {
 }
 /* Engrenage JQuery */
 .cache_engrenage {
-	margin-bottom:-75px;
+	margin-bottom:-70px;
 	background-color:#FFF;
 	height: 25px;
 	position: relative;

@@ -18,10 +18,6 @@ $(window).scroll(function () {
 		$("#engr3").rotate(iCurScrollPos);
 		$("#engr4").rotate(iCurScrollPos);
 		$("#engr5").rotate(-iCurScrollPos*2);
-		$("#engr6").rotate(iCurScrollPos*2);
-		$("#engr7").rotate(iCurScrollPos*2);
-		$("#engr8").rotate(iCurScrollPos*2);
-		$("#engr9").rotate(iCurScrollPos*2);
 	} else { // scroll up
 		$("#engr1").rotate(-iCurScrollPos);
 		$("#engr2").rotate(iCurScrollPos*2+25);
@@ -29,17 +25,26 @@ $(window).scroll(function () {
 		$("#engr3").rotate(iCurScrollPos);
 		$("#engr4").rotate(iCurScrollPos);
 		$("#engr5").rotate(-iCurScrollPos*2);
-		$("#engr6").rotate(iCurScrollPos*2);
-		$("#engr7").rotate(iCurScrollPos*2);
-		$("#engr8").rotate(iCurScrollPos*2);
-		$("#engr9").rotate(iCurScrollPos*2);
 	}
 	iScrollPos = iCurScrollPos;
+});
+$("#proj h3").click(function() {
+	$("#engr6").rotate({
+		angle:0,
+		animateTo:360, 
+   });
+});
+$("#forma h3").click(function() {
+	$("#engr7").rotate({
+		angle:0,
+		animateTo:360, 
+   });
 });
 // fonction accordion jquery ui
 $(function() {
   $( ".accordion" ).accordion({
-    heightStyle: "content"
+    heightStyle: "content",
+	collapsible: true
   });
 });
 //foncttion ajax pour le formulaire

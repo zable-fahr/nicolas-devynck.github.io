@@ -1,31 +1,14 @@
-﻿<?php /*
------------------------------< README >-----------------------------
-<div class="date"></div>
-Date du poste
-
-<div class="poste"></div>
-Intituler du poste
-
-<span></span>
-Detail du poste
-
-<a href="#" target="_blank"></a>
-Lien Externe
---------------------------------------------------------------------
-*/ ?>
-
-<?php echo "\t\t\t\t"; ?>	<div class="date">2015 2016</div>
-<?php echo "\t\t\t\t"; ?>	<div class="poste">
+<?php echo "\t\t\t\t"; ?>	<h3>Développement Web</h3>
+<?php echo "\t\t\t\t"; ?>	<div>
 <?php echo "\t\t\t\t"; ?>		Préparation et validation du certificat développement web et application mobile avec « <a href="http://simplonline.co/" target="_blank">Simplon</a> » labelliser grande ecole du numérique.
-<?php echo "\t\t\t\t"; ?>		<br />
-<?php echo "\t\t\t\t"; ?>		<span>
-<?php echo "\t\t\t\t"; ?>			Apprentissage des langages informatique : PHP, JavaScript, CSS, SQL. Et de divers frameworks : JQuery, Bootstrap.
-<?php echo "\t\t\t\t"; ?>			<br />
-<?php echo "\t\t\t\t"; ?>			Utilisation des outils : Git, cURL, LAMP (Linux, Apache, MySQL, PHP), Cordova .
-<?php echo "\t\t\t\t"; ?>		</span>
+<?php echo "\t\t\t\t"; ?>		Apprentissage des langages informatique : PHP, JavaScript, CSS, SQL. Et de divers frameworks : JQuery, Bootstrap.
+<?php echo "\t\t\t\t"; ?>		Utilisation des outils : Git, cURL, LAMP (Linux, Apache, MySQL, PHP), Cordova .
 <?php echo "\t\t\t\t"; ?>	</div>
-<?php echo "\t\t\t\t"; ?>	<div class="date">2012 2013</div>
-<?php echo "\t\t\t\t"; ?>	<div class="poste">
+<?php echo "\t\t\t\t"; ?>	<h3>DEAU Option Scientifique</h3>
+<?php echo "\t\t\t\t"; ?>	<div>
 <?php echo "\t\t\t\t"; ?>		Préparation et validation au diplôme DAEU option scientifique (Diplôme d’accès aux études universitaires) à «<a href="https://www.iutbeziers.fr/" target="_blank"> l’IUT de Béziers</a> ».
-<?php echo "\t\t\t\t"; ?>		<br />
+<?php echo "\t\t\t\t"; ?>	</div>
+<?php echo "\t\t\t\t"; ?>	<h3>CAP Cuisine</h3>
+<?php echo "\t\t\t\t"; ?>	<div>
+<?php echo "\t\t\t\t"; ?>		Préparation et validation au diplôme DAEU option scientifique (Diplôme d’accès aux études universitaires) à «<a href="https://www.iutbeziers.fr/" target="_blank"> l’IUT de Béziers</a> ».
 <?php echo "\t\t\t\t"; ?>	</div>

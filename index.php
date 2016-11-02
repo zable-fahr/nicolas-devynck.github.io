@@ -25,6 +25,7 @@
 		<script type="text/javascript" src="js/jQueryRotate.js"></script>
 		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="js/jquery-ui.css">
+		<link rel="stylesheet" type="text/css" href="js/jquery-ui.theme.min.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="icon" type="image/png" href="css/logo.png" />
 		
@@ -61,7 +62,7 @@
 				<div class="aside">
 					<h2 id="info">Brèves</h2><div id="engr8"></div>
 					<div class="cache_engrenage"></div>
-					<!-- Qui-suis-je --><?php include 'txt/info.txt'; ?>
+					<!-- Brèves --><?php include 'txt/info.txt'; ?>
 					<!-- continuer contact ici -->
 				</div>
 			</aside>
@@ -69,13 +70,13 @@
 				<div class="article">
 					<h2 id="Projet">Projet</h2><div id="engr6"></div>
 					<div class="cache_engrenage"></div>
-					<div class="accordion">
+					<div class="accordion" id="proj">
 						<!-- Projet --><?php include 'txt/experience.txt'; ?>
 					</div>
 					
 					<h2 id="formation">Formations</h2><div id="engr7"></div>
 					<div class="cache_engrenage"></div>
-					<div class="accordion">
+					<div class="accordion" id="forma">
 						<!-- Formations --><?php include 'txt/formation.txt'; ?>
 					</div>
 					<div class="contact">
