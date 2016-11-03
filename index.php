@@ -42,9 +42,8 @@
 				<!-- Logo -->
 				<div id="logo"></div>
 				<!-- Menu -->
-				<span>[<a class="scrollTo" href="#experiance"> Expériences </a>]</span>
+				<span>[<a class="scrollTo" href="#Projet"> Projet </a>]</span>
 				<span>[<a class="scrollTo" href="#formation"> Formations </a>]</span> 
-				<span>[<a class="scrollTo" href="#info"> Qui-suis-je </a>]</span> 
 				<span>[<a class="scrollTo" href="#contact"> Contact </a>]</span>
 				<!-- Engrenage JQuery Bis -->
 				<div id="engr4"></div>
