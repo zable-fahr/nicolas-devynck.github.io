@@ -24,8 +24,8 @@
 		<script type="text/javascript" src="js/jQuery.js"></script>
 		<script type="text/javascript" src="js/jQueryRotate.js"></script>
 		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
-		<link rel="stylesheet" type="text/css" href="js/jquery-ui.css">
-		<link rel="stylesheet" type="text/css" href="js/jquery-ui.theme.min.css">
+		<link rel="stylesheet" type="text/css" href="js/jquery-ui.min.css">
+		<link rel="stylesheet" type="text/css" href="js/jquery-ui.theme.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="icon" type="image/png" href="css/logo.png" />
 		

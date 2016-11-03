@@ -93,6 +93,9 @@ header img {
 	width: 74%;
 	border-left: solid 2px #888888;
 }
+.accordion blockquote {
+	color : #444;
+}
 /* rezo */
 .rezo {
 	text-align: center;
