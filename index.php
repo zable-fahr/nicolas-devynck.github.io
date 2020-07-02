@@ -34,7 +34,7 @@
 		<!-- Engrenage JQuery -->
 		<div id="engr1"></div>
 		<div id="engr2"></div>
-		<div id="engr3"></div
+		<div id="engr3"></div>
 		<nav>
 			<div class="nav">
 				<!-- Logo -->
