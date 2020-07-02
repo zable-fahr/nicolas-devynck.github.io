@@ -28,8 +28,6 @@
 		<link rel="stylesheet" type="text/css" href="js/jquery-ui.theme.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="icon" type="image/png" href="css/logo.png" />
-		
-		<?php // include 'php/conteur.php'; ?>
 
 	</head>
 	<body>
