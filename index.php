@@ -35,7 +35,7 @@
 		<div id="engr1"></div>
 		<div id="engr2"></div>
 		<div id="engr3"></div>
-		<nav>
+		<div>
 			<div class="nav">
 				<!-- Logo -->
 				<div id="logo"></div>
@@ -47,7 +47,7 @@
 				<div id="engr4"></div>
 				<div id="engr5"></div>
 			</div>
-		</nav>
+		</div>
 		<div id="cadre">
 			<!-- header -->
 			<header>
